@@ -87,6 +87,7 @@ void setup()
 	uart1.printf("执行应用程序\r\n");
 		delay_ms(100);
 
+	noInterrupts();
   iap_load_app(FLASH_APP1_ADDR);
 }
 int main(void)
